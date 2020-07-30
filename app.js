@@ -117,7 +117,14 @@ btn4.innerHTML=answers[0].option4;
 
 if(name.length==0){
     alert("please enter your name,please reload the window and enter your name ");
-    document.getElementById('main').innerHTML="";
+    document.getElementById('main').innerHTML="<h1>Please enter your name & restart the quiz</h1>";
+    var button = document.createElement('BUTTON');
+    button.innerHTML="Restart Quiz";
+    button.setAttribute("id",'restart');
+    button.classList.add('btn');
+    button.classList.add('btn-primary');
+    button.setAttribute('onclick','window.location.reload()');
+    document.getElementById('main').appendChild(button);
 }
 else{
 function next(){
