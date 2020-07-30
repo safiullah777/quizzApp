@@ -117,6 +117,7 @@ btn4.innerHTML=answers[0].option4;
 
 if(name.length==0){
     alert("please enter your name,please reload the window and enter your name ");
+    document.getElementById('main').innerHTML="";
 }
 else{
 function next(){
@@ -144,17 +145,45 @@ function next(){
     else{
         if(score>=90){
         document.getElementById('main').innerHTML=`<h1 class='result'>Congratuation!!!</h1><h4 class='result1'>${name} you have got ${score} out of ${questions.length*10} marks<br>your percentage is ${score/questions.length*10}%</h4>`;
+        var button = document.createElement('BUTTON');
+        button.innerHTML="Restart Quiz";
+        button.setAttribute("id",'restart');
+        button.classList.add('btn');
+        button.classList.add('btn-primary');
+        button.setAttribute('onclick','window.location.reload()');
+        document.getElementById('main').appendChild(button);
         }
         else if(score>=70){
         document.getElementById('main').innerHTML=`<h1 class='result'>Weldone!!!</h1><h4 class='result1'>${name} you have got ${score} out of ${questions.length*10} marks <br>your percentage is ${score/questions.length*10}% <br>keep it up!!</h4>`;
-        }
+        var button = document.createElement('BUTTON');
+        button.innerHTML="Restart Quiz";
+        button.setAttribute("id",'restart');
+        button.classList.add('btn');
+        button.classList.add('btn-primary');
+        button.setAttribute('onclick','window.location.reload()');
+        document.getElementById('main').appendChild(button);    
+    }
         else if(score>=40){
             document.getElementById('main').innerHTML=`<h1 class='result'>Good!!!</h1><h4 class='result1'>${name} you have got ${score} out of ${questions.length*10} marks <br>your percentage is ${score/questions.length*10}% <br>you have to practice more improve!!</h4>`;
+            var button = document.createElement('BUTTON');
+            button.innerHTML="Restart Quiz";
+            button.setAttribute("id",'restart');
+            button.classList.add('btn');
+            button.classList.add('btn-primary');
+            button.setAttribute('onclick','window.location.reload()');
+            document.getElementById('main').appendChild(button);
         }
         else{
             document.getElementById('main').innerHTML=`<h1 class='result' style="color: red !important;">OoPs!!!</h1><h4 class='result1'>${name} you have got ${score} out of ${questions.length*10} marks <br>your percentage is ${score/questions.length*10}% <br>need much hardwork!!</h4>`;
-
+            var button = document.createElement('BUTTON');
+            button.innerHTML="Restart Quiz";
+            button.setAttribute("id",'restart');
+            button.classList.add('btn');
+            button.classList.add('btn-primary');
+            button.setAttribute('onclick','window.location.reload()');
+            document.getElementById('main').appendChild(button);
         }
+        
         
 
 

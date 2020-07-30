@@ -113,3 +113,11 @@ li{
     float: right;
     
 }
+#restart{
+    /* float: right; */
+    /* display: inline-block; */
+    
+    margin: 2em 40%;
+    outline: none;
+    
+}
