@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="front">
+                <h1 class="heading" style="text-align: center;">Quiz App</h1>
+                <h2>instruction:</h2>
+                <ul>
+                    <li>you can select option only one time.</li>
+                    <li>if your selected option is right ,the option will be green ,and if your selected option is wrong then it will to turns and correct answer will also turns green.</li>
+                    <li>The quiz contain 10 questions, and each question have 10 marks</li>
+
+                </ul>
+                <button id="start" class="btn btn-primary" onclick="hide(this)">Start</button>
+            </div>
+
+            <div id="later" class="hide">
+                <h1 class="heading" style="text-align: center;">Quiz App</h1>
+            <h2 id="heading">Question no 1:</h2>
+            <p id="question"></p>
+            <div id="btns">
+                <button id="btn1" class="btn" onclick="active(this)"></button>
+                <button id="btn2" class="btn" onclick="active(this)"></button>
+                <button id="btn3" class="btn" onclick="active(this)"></button>
+                <button id="btn4" class="btn" onclick="active(this)"></button>
+
+            </div>
+            <button id="next" class="btn btn-primary" onclick="next()">Next</button>
+        </div>
+        </div>
+        
+        <script src="app.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

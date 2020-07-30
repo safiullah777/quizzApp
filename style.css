@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 600px;
+    height: 430px;
+    margin: 3em auto;
+    border-radius: 10px;
+    border: 2px purple solid;
+    padding: 2em;
+    background-color: rgba(168, 18, 168, 0.3);
+
+}
+li{
+    margin-left: 1em;
+    font-size: 17px;
+}
+@media screen and (max-width:650px){
+    #main{
+        width: 450px;
+        height: 550px;
+
+    }
+   #btns{
+    display: grid;
+    grid-template-columns: repeat(1 ,auto) !important;
+    grid-gap: 20px;
+}
+}
+#heading{
+    color: #df6589df;
+    margin: 1em 0 0.5em 0em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: white; */
+}
+.heading{
+    color: rgb(41, 30, 204);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#question{
+    margin-bottom: 1em;
+    font-size: 20px;
+    line-height: 30px;
+}
+#btns{
+    display: grid;
+    grid-template-columns: repeat(2 ,auto);
+    grid-gap: 20px;
+}
+#btn1,#btn2,#btn3,#btn4{
+    outline: none;
+    border: 2px rgb(8, 124, 170) solid;
+    background-color: rgb(34, 176, 233);
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 17px;
+
+}
+#btn1:hover,#btn2:hover,#btn3:hover,#btn4:hover{
+    border: 2px solid rgb(35, 57, 177);
+    background-color: rgb(36, 145, 189);
+    color: white;
+    font-weight: bold;
+}
+#next{
+    margin-top: 1em;
+    float: right;
+    outline: none;
+}
+.active{
+    border:darkblue 2px solid !important;
+    background-color: skyblue !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.right,.right:hover{
+    border:green 2px solid !important;
+    background-color: #0aa10a !important;
+    color: white !important;
+    font-weight: bold !important;
+
+}
+.wrong,.wrong:hover{
+    border: 2px rgb(228, 0, 0) solid !important;
+    background-color: #f11800 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.result{
+    text-align: center;
+    color: BLUE;
+    font-family: sans-serif;
+}
+
+.result1{
+    margin-top: 2em;
+    text-align: center;
+    /* color: white; */
+}
+.hide{
+    display: none !important;
+}
+#start{
+    margin-top: 2em;
+    margin-right: 2em;
+    width: 150px;
+    outline: blue;
+    float: right;
+    
+}
